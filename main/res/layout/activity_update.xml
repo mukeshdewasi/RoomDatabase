@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateActivity"
+    android:gravity="center"
+    android:layout_margin="10dp">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Name"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="22sp"/>
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Email"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/et_dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date Of Birth"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="22sp"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginLeft="40dp"
+            android:onClick="Radiobuttonclicked"/>
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FeMale"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginLeft="40dp"
+            android:onClick="Radiobuttonclicked"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Update"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>
